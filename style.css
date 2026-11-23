@@ -735,16 +735,23 @@ p{
     pointer-events:none;
 }
 
-/* 4 buses */
+
 @media (max-width: 1400px){
-    .bus:nth-child(4){
+    .bus:nth-child(5){
         display: none;
     }
 }
 
-/* 3 buses */
 @media (max-width: 1200px){
-    .bus:nth-child(4),
+    .bus:nth-child(5),
+    .bus:nth-child(3){
+        display: none;
+    }
+}
+
+@media (max-width: 1000px){
+    .bus:nth-child(5),
+    .bus:nth-child(3),
     .bus:nth-child(2){
         display: none;
     }
